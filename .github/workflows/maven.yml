@@ -33,3 +33,6 @@ jobs:
           args: # optional
           # Set the sonar.projectBaseDir analysis property
           projectBaseDir: # optional, default is .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_T }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
